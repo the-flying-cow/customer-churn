@@ -1,4 +1,4 @@
-# Random Forest Customer Churn Project
+# Customer Churn Project
 The applciation uses a RandomForest model implemented on the Telco Customer Churn dataset from Kaggle.
 
 # Description
