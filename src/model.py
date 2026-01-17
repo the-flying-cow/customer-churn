@@ -17,9 +17,8 @@ def hyper_parameter_tune(pipe, X_train, y_train ):
         "classifier__criterion": ['gini', 'entropy']
         }
 
-    random_search= RandomizedSearchCV(pipe, param_distributions=params, n_iter=100, scoring='roc_auc', cv=10, n_jobs=-1, random_state= 7)
+    random_search= RandomizedSearchCV(pipe, param_distributions=params, n_iter=100, scoring='f1', cv=10, n_jobs=-1, random_state=7)
     random_search.fit(X_train, y_train)
-    
     return random_search.best_estimator_
 
 def predict_churn(model, test):

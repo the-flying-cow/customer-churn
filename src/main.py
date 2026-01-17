@@ -50,7 +50,7 @@ def main():
     models_dir = os.path.join(BASE_DIR, "models")
     os.makedirs(models_dir, exist_ok=True)
     model_path = os.path.join(models_dir, "best_model.pkl")
-    joblib.dump(rf_pipe, model_path)
+    joblib.dump(rf_pipe, model_path)    
 
     return rf_pipe
 
